@@ -3,13 +3,13 @@ $:.push File.expand_path("../lib", __FILE__)
 require "geohex/version"
 
 Gem::Specification.new do |s|
-  s.name        = "geohex-v3"
-  s.version     = Geohex::VERSION
-  s.authors     = ["toshiwo"]
-  s.email       = ["toshiwo@toshiwo.com"]
-  s.homepage    = "https://github.com/toshiwo/geohex-v3"
-  s.summary     = %q{The GeoHex is a latitude/longitude encoding system}
-  s.description = %q{The GeoHex is a latitude/longitude encoding system}
+  s.name        = "geohex"
+  s.version     = "3.0.0"
+  s.authors     = ["therocketforever"]
+  s.email       = ["therocketforever@me.com"]
+  s.homepage    = "http://therocketforever.com"
+  s.summary     = "GeoHex is a latitude/longitude encoding system invented by sa2da."
+  s.description = "Forked & built with love by therocketforever"
 
   s.rubyforge_project = "geohex"
 
