@@ -4,12 +4,12 @@ require "geohex/version"
 
 Gem::Specification.new do |s|
   s.name        = "geohex"
-  s.version     = Geohex::VERSION
-  s.authors     = ["toshiwo"]
-  s.email       = ["toshiwo@toshiwo.com"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.version     = "3.0.0"
+  s.authors     = ["therocketforever"]
+  s.email       = ["therocketforever@me.com"]
+  s.homepage    = "http://therocketforever.com"
+  s.summary     = "GeoHex is a latitude/longitude encoding system invented by sa2da."
+  s.description = "Forked & built with love by therocketforever"
 
   s.rubyforge_project = "geohex"
 
