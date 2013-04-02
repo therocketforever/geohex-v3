@@ -1,7 +1,7 @@
 require "geohex/version"
 require "geohex/v3"
 
-module Geohex
+module GeoHex
 	def encode(latitude, longitude, level)
   	Geohex::V3::Zone.encode(latitude, longitude, level)
 	end
