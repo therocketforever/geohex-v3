@@ -4,7 +4,7 @@ require "geohex/version"
 
 Gem::Specification.new do |s|
   s.name        = "geohex"
-  s.version     = "3.0.0"
+  s.version     = "3.0.0a"
   s.authors     = ["therocketforever"]
   s.email       = ["therocketforever@me.com"]
   s.homepage    = "http://therocketforever.com"
