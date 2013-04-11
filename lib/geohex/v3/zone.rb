@@ -310,8 +310,17 @@ module Geohex
         code = "#{ H_KEY.slice(h_a1) }#{ H_KEY.slice(h_a2)}#{h_2}"
 
         [ z_loc_y, z_loc_x, h_x, h_y, code ]
+        
+        @code = "#{ H_KEY.slice(h_a1) }#{ H_KEY.slice(h_a2)}#{h_2}"
+        @x = h_x
+        @y = h_y
+        @latitude = latitude
+        @longitude = longitude
+        @code
+				
+				
       end
-      private :getZoneByXY
+#     private :getZoneByXY
 
       def adjust_xy x, y, level
         rev = 0
@@ -349,7 +358,7 @@ module Geohex
 
         [ x, y, rev ]
       end
-      private :adjust_xy
+#     private :adjust_xy
 
     end
   end
