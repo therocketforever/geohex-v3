@@ -310,6 +310,10 @@ module Geohex
 
         [ z_loc_y, z_loc_x, h_x, h_y, code ]
         
+        # todo: Evaluate breaking changes from toshiwo 
+        # TypeError - [41.32184287764911, -81.63694558756286, -159, 8768, "PF4175383"] is not a symbol
+        # returned by his update to the gem. 
+        
         @code = "#{ H_KEY.slice(h_a1) }#{ H_KEY.slice(h_a2)}#{h_2}"
         @x = h_x
         @y = h_y
