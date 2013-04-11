@@ -28,6 +28,11 @@ module Geohex
 
           instance
         end
+        
+        def getZoneByXY x, y, level
+          instance = self.new
+          instance.getZoneByXY x, y, level
+        end
       end
 
       def calcHexSize level
@@ -48,7 +53,6 @@ module Geohex
         lon = (x / H_BASE) * 180
         lat = (y / H_BASE) * 180
         lat = 180.0 / Math::PI * (2.0 * Math.atan(Math.exp(lat * Math::PI / 180)) - Math::PI / 2)
-
         OpenStruct.new :lon => lon, :lat => lat
       end
       private :xy2loc
@@ -345,7 +349,6 @@ module Geohex
         [ x, y, rev ]
       end
       private :adjust_xy
-
     end
   end
 end
