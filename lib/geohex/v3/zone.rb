@@ -306,7 +306,7 @@ module Geohex
 
         [ z_loc_y, z_loc_x, h_x, h_y, code ]
       end
-      private :getZoneByXY
+      #private :getZoneByXY
 
       def adjust_xy x, y, level
         rev = 0
