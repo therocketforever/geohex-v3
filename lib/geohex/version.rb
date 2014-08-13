@@ -1,3 +1,3 @@
 module Geohex
-  VERSION = "3.0.0a"
+  VERSION = "0.0.4"
 end

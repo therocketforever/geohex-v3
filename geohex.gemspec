@@ -3,13 +3,13 @@ $:.push File.expand_path("../lib", __FILE__)
 require "geohex/version"
 
 Gem::Specification.new do |s|
-  s.name        = "geohex"
+  s.name        = "geohex-v3"
   s.version     = Geohex::VERSION
-  s.authors     = ["therocketforever"]
-  s.email       = ["therocketforever@me.com"]
-  s.homepage    = "http://therocketforever.com"
-  s.summary     = "GeoHex is a latitude/longitude encoding system invented by sa2da."
-  s.description = "Forked from toshiwo & built with love by therocketforever"
+  s.authors     = ["toshiwo", "therocketforever"]
+  s.email       = ["toshiwo@toshiwo.com"]
+  s.homepage    = "https://github.com/toshiwo/geohex-v3"
+  s.summary     = %q{The GeoHex is a latitude/longitude encoding system}
+  s.description = %q{The GeoHex is a latitude/longitude encoding system}
 
   s.rubyforge_project = "geohex"
 
@@ -22,6 +22,7 @@ Gem::Specification.new do |s|
   # s.add_development_dependency "rspec"
   # s.add_runtime_dependency "rest-client"
 
+  s.add_development_dependency 'rake'
   s.add_development_dependency "rspec"
   s.add_development_dependency "rr"
   s.add_development_dependency "simplecov"
