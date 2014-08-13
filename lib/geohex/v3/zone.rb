@@ -28,6 +28,11 @@ module Geohex
 
           instance
         end
+
+        def getZoneByXY x, y, level
+          instance = self.new
+          instance.getZoneByXY x, y, level
+        end
       end
 
       def calcHexSize level
