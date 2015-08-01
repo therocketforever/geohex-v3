@@ -53,7 +53,6 @@ module Geohex
         lon = (x / H_BASE) * 180
         lat = (y / H_BASE) * 180
         lat = 180.0 / Math::PI * (2.0 * Math.atan(Math.exp(lat * Math::PI / 180)) - Math::PI / 2)
-
         OpenStruct.new :lon => lon, :lat => lat
       end
       private :xy2loc
@@ -294,9 +293,10 @@ module Geohex
               code3_y[0] = 1
             end
           end
+    
         end
 
-        code3_x.length.times do |i|
+        code3_x.length.to_i.times do |i|
           code3 = "#{ code3_x[i] }#{ code3_y[i] }"
           code9 = code3.to_i(3).to_s
           h_code += code9.to_s
@@ -310,6 +310,15 @@ module Geohex
         code = "#{ H_KEY.slice(h_a1) }#{ H_KEY.slice(h_a2)}#{h_2}"
 
         [ z_loc_y, z_loc_x, h_x, h_y, code ]
+        
+        @code = "#{ H_KEY.slice(h_a1) }#{ H_KEY.slice(h_a2)}#{h_2}"
+        @x = h_x
+        @y = h_y
+        @latitude = latitude
+        @longitude = longitude
+        @code
+				
+				
       end
       #private :getZoneByXY
 
@@ -349,8 +358,7 @@ module Geohex
 
         [ x, y, rev ]
       end
-      private :adjust_xy
-
+#     private :adjust_xy
     end
   end
 end
