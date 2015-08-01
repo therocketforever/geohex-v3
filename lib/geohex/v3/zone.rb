@@ -293,9 +293,10 @@ module Geohex
               code3_y[0] = 1
             end
           end
+    
         end
 
-        code3_x.length.times do |i|
+        code3_x.length.to_i.times do |i|
           code3 = "#{ code3_x[i] }#{ code3_y[i] }"
           code9 = code3.to_i(3).to_s
           h_code += code9.to_s
