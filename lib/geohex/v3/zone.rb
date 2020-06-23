@@ -342,7 +342,7 @@ module Geohex
 
         code = "#{ H_KEY.slice(h_a1) }#{ H_KEY.slice(h_a2)}#{h_2}"
 
-        @latitude, @longitude, @x, @y, @code  =  z_loc_y, z_loc_x, h_x, h_y, code
+        @latitude, @longitude, @x, @y, @code, @level =  z_loc_y, z_loc_x, h_x, h_y, code, level
         [ z_loc_y, z_loc_x, h_x, h_y, code ]
       end
 
